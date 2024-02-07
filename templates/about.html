@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <title>My Website - About</title>
-</head>
-<body>
- <h1>Jamari McFarlane</h1>
- <p>    
-    I write code and I play football & chess
-</p>
-</body>
-</html> 
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website - About</title>
+    <link rel="stylesheet" href='{{ url_for('static', filename='css/app.css')}}' />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+  </head>
+  <body>
+    <h1>Jamari McFarlane</h1>
+    <p>
+    
+        <img src="{{url_for('static',filename='images/pfp.jpg')}}" alt="">
+
+        <p>I like programming</p>
+          
+    </p>
+  </body>
+</html>
